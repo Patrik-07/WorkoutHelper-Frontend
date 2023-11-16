@@ -1,0 +1,11 @@
+<h1 class="text-5xl text-center px-10 pt-10">WorkoutHelper</h1>
+<h1 class="text-2xl text-center pt-4 pb-10">Choose a bodypart!</h1>
+<div class="flex flex-col items-center">
+  <div class="grid xl:grid-cols-5 md:grid-cols-3 grid-cols-2 grid-rows-2 gap-4">
+    <app-bodypart-link
+      *ngFor="let bodypart of bodyparts"
+      [bodypart]="bodypart"
+    ></app-bodypart-link>
+  </div>
+</div>
+<router-outlet></router-outlet>
